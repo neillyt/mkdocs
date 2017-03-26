@@ -159,18 +159,18 @@ username = ARGV.first
 > To read a file, we must use the _open_ and _read_ methods.
 
 File methods for controlling a file:  
-* `open` = opens a file so that it can be read, written, etc.
-  * `open("filename.txt","w")` = write to the file
-  * `open("filename.txt","r")` = read from the file
-  * `open("filename.txt","a")` = append to the file
-  * `open("filename.txt","r+")` = open and write to or read from the file
-  * `open("filename.txt","w+")` = create and write to or read from the file
-  * `open("filename.txt","a+")` = open or create to write to or read from the file
-* `close` = closes the file
-* `read` = reads the contents of a file (can assign the result to a var)
-* `readline` = read just one line from a text file
-* `truncate` = accepts an argument of an integer - the argument supplied is how many characters will remain after truncation (0 to remove all characters)
-* `write` = writes text to the file
+* `open` = opens a file so that it can be read, written, etc.  
+  * `open("filename.txt","w")` = write to the file  
+  * `open("filename.txt","r")` = read from the file  
+  * `open("filename.txt","a")` = append to the file  
+  * `open("filename.txt","r+")` = open and write to or read from the file  
+  * `open("filename.txt","w+")` = create and write to or read from the file  
+  * `open("filename.txt","a+")` = open or create to write to or read from the file  
+* `close` = closes the file  
+* `read` = reads the contents of a file (can assign the result to a var)  
+* `readline` = read just one line from a text file  
+* `truncate` = accepts an argument of an integer - the argument supplied is how many characters will remain after truncation (0 to remove all characters)  
+* `write` = writes text to the file  
 
 Here is an example of passing a file name as an argument, opening that file, and printing the contents of the file on the screen:  
 ```
