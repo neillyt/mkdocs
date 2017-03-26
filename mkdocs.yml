@@ -1,0 +1,7 @@
+site_name: My Docs
+pages:
+    - Home: "index.md"
+    - Ruby:
+        - "Ruby Basics" : "ruby/ruby_basics.md"
+        - "Ruby Methods" : "ruby/ruby_methods.md"
+        - "Ruby Classes" : "ruby/ruby_classes.md"
