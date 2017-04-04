@@ -10,7 +10,7 @@ Chef-Client:
 > Agent that runs locally on the node that is registered with the chef server.
 
 Convergence:  
-> Occurs when chef-client configures the system/node based off information collected from chef-server.
+> Occurs when chef-client configures the system/node based off information collected from chef-server. Convergence happens when tbe client.rb recipe is executed.
 
 Configuration Drift:  
 > Occurs when the node state does not reflect the updated state of policies/configurations on the chef server.
