@@ -1,7 +1,7 @@
 ### Chef Terminology
 
 Recipes:  
-> Fundamental configuration element within an organization.
+> Fundamental configuration element within an organization. A recipe is a part of a cookbook, able to be executed separately.
 
 Cookbook:  
 > Defines a scenario and is the fundamental unit of configuration and policy distribution. Written in Ruby. Recipes are stored in cookbooks and can have dependencies of other recipes.
@@ -10,19 +10,22 @@ Chef-Client:
 > Agent that runs locally on the node that is registered with the chef server.
 
 Convergence:  
-> Occurs when chef-client configures the system/node based off information collected from chef-server. Convergence happens when tbe client.rb recipe is executed.
+> Occurs when chef-client configures the system/node based off information collected from chef-server. Convergence happens when the client.rb recipe is executed.
 
 Configuration Drift:  
 > Occurs when the node state does not reflect the updated state of policies/configurations on the chef server.
 
 Resources:  
->A statement of configuration policy within a recipe. Describes the desired state of an element in the infrastructure and steps needed to configure.
+> A statement of configuration policy within a recipe. Describes the desired state of an element in the infrastructure and steps needed to configure.
 
 Provider:  
 > Defines the steps that are needed to bring the peice of the system from its current state to the desired state.  
 
+Run list:  
+> A run-list is a list of cookbooks/recipes that are to be executed on a specific node.
+
 Attributes:  
-> Specific details about the node, used by chef-client to understand current state of the node, the state of the node on the previous chef-client run, and the state of the node at the end of the client run.  
+> Specific details about the node, used by chef-client to understand current state of the node, the state of the node on the previous chef-client run, and the state of the node at the end of the client run. Attributes would what the operating system is, how much memory the node has, what kind of CPU the node has, etc.
 
 Data-bags:  
 > A global variable stored as JSON data and is accessible from the Chef server.  

@@ -5,3 +5,16 @@ pages:
         - "Ruby Basics" : "ruby/ruby_basics.md"
         - "Ruby Methods" : "ruby/ruby_methods.md"
         - "Ruby Classes" : "ruby/ruby_classes.md"
+    - Chef:
+        - "Chef" : "chef/chef.md"
+        - "Chef Terminology" : "chef/chef_terms.md"
+        - "Installing Chef" : "chef/installing_chef"
+        - "Chef 1) Resource Types" : "chef/chef1_resource_types.md"
+        - "Chef 2) Using Knife to Bootstrap" : "chef/chef2_knife_to_bootstrap.md"
+        - "Chef 3) Chef Configurations, Repository, and Chef-Client" : "chef/chef3_security_and_configs.md"
+        - "Chef 4) Configuration Concepts" : "chef/chef4_configuration_concepts.md"
+        - "Chef 5) Getting Started" : "chef/chef5_getting_started.md"
+        - "Chef 6) Creating a Cookbook" : "chef/chef6_cookbook.md"
+        - "Chef 7) Setting Attributes" : "chef/chef7_setting_attributes.md"
+        - "Chef 8) Node Objects" : "chef/chef8_node_objects.md"
+theme: readthedocs

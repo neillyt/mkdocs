@@ -17,4 +17,4 @@ Install chef on the workstation:
 #### Bootstrap the Node From the Workstation  
 
 Navigate to the chef repo and execute the knife bootstrap command:  
-`$ knife bootstrap <hostname> -x root -P <password>`
+`$ knife bootstrap <hostname> -x root -P <password>`  

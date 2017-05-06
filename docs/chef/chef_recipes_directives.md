@@ -22,7 +22,7 @@
 
 Example: Notice the service "httpd" resource type at the top of the file - it currently has no actual instructions on what to do, so it will do nothing. The next part, the cookbook file looks at the /etc/httpd/conf/httpd.conf file and if the file does not already have the configurations listed below, changes will  be made to the file. When the notifies property runs, it will send a restart notification to the service "httpd" resource name.
 
-Example of the notifies directive:
+Example of the **notifies** directive:
 
 ```
 service "httpd" do
@@ -40,9 +40,9 @@ end
 ```
 
 #### Subscribes directive
-> a notification property that allows a resource to listen to another resource and then take action if the state of the resource being listened to changes.
+> A notification property that allows a resource to listen to another resource and then take action if the state of the resource being listened to changes.
 
-In the example below, the subscribes listens for the change. By default, the service resource type is not set to do anything other than subscribe. The cookbook_file resource type looks at the /etc/httpd/conf/httpd.conf and will make changes if the configuration does not match. If, and only if, changes are made to the /etc/httpd/conf/httpd.conf file then the service resource type will execute a reload.
+In the example below, the **subscribes** directive listens for the change. By default, the service resource type is not set to do anything other than subscribe. The cookbook_file resource type looks at the /etc/httpd/conf/httpd.conf and will make changes if the configuration does not match. If, and only if, changes are made to the /etc/httpd/conf/httpd.conf file then the service resource type will execute a reload.
 
 Example of the subscribes directive:
 
@@ -79,3 +79,11 @@ run_list recipe[chrony::recipe]","recipe[packages::recipe]","recipe[firewall_rul
 ### include_recipe
 >A recipe can include a recipe from a different cookbook. For example, including the motd_recipe in an already existing recipe:
 include_recipe 'cookbook_name::recipe_name'
+
+For example, if we have a recipe called "install_ansible" that we wanted to include from the "ansible" cookbook:  
+```
+include_recipe "php::default"
+```
+
+### Adding a Node to a Run List  
+`knife node run_list add <node name> "recipe[<recipe name>]"`
