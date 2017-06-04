@@ -8,3 +8,6 @@ Attributes are build during the chef-client run process:
 - THe rebuilt node object from the current chef-client run  
 
 Once the node object is rebuilt, all attributes are compared and then updated based on attribute precendence. At the end of every chef-client run, the node object that defines the current state of the node is uplaoded to the chef server to be searched.  
+
+To check out all of the Ohai node objects of a node, simply run 'ohai':  
+`$ ohai`

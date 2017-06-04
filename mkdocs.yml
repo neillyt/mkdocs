@@ -6,6 +6,7 @@ pages:
         - "Ruby Methods" : "ruby/ruby_methods.md"
         - "Ruby Classes" : "ruby/ruby_classes.md"
     - Chef:
+        - "Knife CLI" : "chef/knife_cli.md"
         - "Chef" : "chef/chef.md"
         - "Chef Terminology" : "chef/chef_terms.md"
         - "Installing Chef" : "chef/installing_chef"
@@ -17,4 +18,9 @@ pages:
         - "Chef 6) Creating a Cookbook" : "chef/chef6_cookbook.md"
         - "Chef 7) Setting Attributes" : "chef/chef7_setting_attributes.md"
         - "Chef 8) Node Objects" : "chef/chef8_node_objects.md"
+        - "Chef 9) Chef Search" : "chef/chef9_search.md"
+        - "Chef 10) Data Bags" : "chef/chef10_data_bags.md"
+        - "Chef 11) Roles" : "chef12_roles.md"
+    - Docker and Kubernetes:
+        - "Docker and Kubernetes" "dk/kubernetes.md"
 theme: readthedocs
